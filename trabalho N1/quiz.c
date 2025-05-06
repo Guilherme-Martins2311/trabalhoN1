@@ -15,22 +15,23 @@ int main(int argc, char* argv[]){
 
     switch (opcao){
     case 1:
-    //comando do\while para caso o usuário deseje trocar o tema
+        //comando do\while para caso o usuário deseje trocar o tema
         do{
         printf("Escolha uma categoria para as perguntas:\n");
         printf("1 - Conhecimentos Gerais\n");
         printf("2 - Entreterimento\n");
         scanf("%d", &opcao2);
 
-    //switch para as categorias
+
+        //switch para as categorias
         switch (opcao2){
         case 1:
-            printf("Pergunta\n");
-            printf("Pergunta\n");
-            printf("a)\n");
-            printf("b)\n");
-            printf("c)\n");
-            printf("d)\n");
+            printf("Pergunta 01\n");
+            printf("Quais o menor e o maior pais do mundo?\n");
+            printf("a) Vaticano e Russia\n");
+            printf("b) Nauru e China\n");
+            printf("c) Mônaco e Canadá\n");
+            printf("d) Malta e Estados Unidos\n");
             scanf(" %c", &resposta);
             getchar();
 
@@ -52,15 +53,153 @@ int main(int argc, char* argv[]){
 
             if(opcao3 == 1){
 
-            }
+                printf("Pergunta 02\n");
+                printf("Quantas casas decimais tem o numero pi?\n");
+                printf("a) Duas\n");
+                printf("b) Centenas\n");
+                printf("c) Infinitas\n");
+                printf("d) Milhares\n");
+                scanf(" %c", &resposta);
+                getchar();
 
+                if(resposta == 'c'){
+                printf("Voce acertou a resposta\n");
+                acertos++;
+                pontuacao++;
+                }else{
+                printf("Voce errou a resposta\n");
+                erros++;
+                pontuacao--;
+                }
+
+                printf("\n1 - Proxima pergunta\n");
+                printf("2 - Escolher outro tema\n");
+                printf("3 - Ver pontuacao\n");
+                printf("4 - Sair\n");
+                scanf("%d", &opcao3);
+
+                if(opcao3 == 1){
+                    printf("Pergunta 03\n");
+                    printf("Quanto tempo a luz do Sol demora para chegar a Terra?\n");
+                    printf("a) 12 minutos\n");
+                    printf("b) 1 dia\n");
+                    printf("c) 12 horas\n");
+                    printf("d) 8 minutos\n");
+                    scanf(" %c", &resposta);
+                    getchar();
+
+                    if(resposta == 'd'){
+                        printf("Voce acertou a resposta\n");
+                        acertos++;
+                        pontuacao++;
+                    }else{
+                        printf("Voce errou a resposta\n");
+                        erros++;
+                        pontuacao--;
+                    }
+
+                    printf("\n1 - Proxima pergunta\n");
+                    printf("2 - Escolher outro tema\n");
+                    printf("3 - Ver pontuacao\n");
+                    printf("4 - Sair\n");
+                    scanf("%d", &opcao3);
+                }
+                }
+
+            //caso o usuario deseje sair do quiz        
             if(opcao3 == 4){
                 printf("Quiz encerrado\n");
             }
         break;
 
+
+
         case 2:
+            printf("Pergunta 01\n");
+            printf("Qual o verdadeiro nome do Capitao America? \n");
+            printf("a) Tony Stark\n");
+            printf("b) Steve Rogers\n");
+            printf("c) Bucky Barner\n");
+            printf("d) Bruce Banner\n");
+            scanf(" %c", &resposta);
+            getchar();
+
+            if(resposta == 'b'){
+                printf("Voce acertou a resposta\n");
+                acertos++;
+                pontuacao++;
+            }else{
+                printf("Voce errou a resposta\n");
+                erros++;
+                pontuacao--;
+            }
+
+            printf("\n1 - Proxima pergunta\n");
+            printf("2 - Escolher outro tema\n");
+            printf("3 - Ver pontuacao\n");
+            printf("4 - Sair\n");
+            scanf("%d", &opcao3);
+
+            if(opcao3 == 1){
+
+                printf("Pergunta 02\n");
+                printf("Qual desses personagens de filmes de terror tem a capacidade de invadir o sonho das pessoas?\n");
+                printf("a) it\n");
+                printf("b) jason\n");
+                printf("c) Freddy Krueger\n");
+                printf("d) Hannibal Lecter\n");
+                scanf(" %c", &resposta);
+                getchar();
+
+                if(resposta == 'c'){
+                printf("Voce acertou a resposta\n");
+                acertos++;
+                pontuacao++;
+                }else{
+                printf("Voce errou a resposta\n");
+                erros++;
+                pontuacao--;
+                }
+
+                printf("\n1 - Proxima pergunta\n");
+                printf("2 - Escolher outro tema\n");
+                printf("3 - Ver pontuacao\n");
+                printf("4 - Sair\n");
+                scanf("%d", &opcao3);
+            }
+
+                if(opcao3 == 1){
+                    printf("Pergunta 03\n");
+                    printf("Qual a musica mais famosa do Michael Jackson\n");
+                    printf("a) Beat it\n");
+                    printf("b) Billie Jean\n");
+                    printf("c) Thriller\n");
+                    printf("d) Bad\n");
+                    scanf(" %c", &resposta);
+                    getchar();
+
+                    if(resposta == 'b'){
+                        printf("Voce acertou a resposta\n");
+                        acertos++;
+                        pontuacao++;
+                    }else{
+                        printf("Voce errou a resposta\n");
+                        erros++;
+                        pontuacao--;
+                    }
+
+                    printf("\n1 - Proxima pergunta\n");
+                    printf("2 - Escolher outro tema\n");
+                    printf("3 - Ver pontuacao\n");
+                    printf("4 - Sair\n");
+                    scanf("%d", &opcao3);
+                }
+                //caso o usuario deseje sair do quiz
+                if(opcao3 == 4){
+                    printf("Quiz encerrado\n");
+                }
         break;
+
 
         default:
             printf("Opção inválida\n");
@@ -69,15 +208,15 @@ int main(int argc, char* argv[]){
 
         }while(opcao3 == 2);
 
-    //if para quando o usuário escolher ver sua pontuação
+     //if para quando o usuário escolher ver sua pontuação
         if(opcao3 == 3){
             printf("Sua pontuacao eh: %d\n", pontuacao);
             printf("Numero de acertos eh: %d\n", acertos);
             printf("Numero de erros eh: %d\n", erros);
         }
-
         break;
 
+        //caso o usuario deseje sair do quiz
     case 2:
         printf("Quiz encerrado\n");
         break;
@@ -87,7 +226,5 @@ int main(int argc, char* argv[]){
         break;
     }
     
-
-
     return 0;
 }
