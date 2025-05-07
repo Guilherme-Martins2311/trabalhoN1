@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
     printf("2 - Sair\n");
     scanf("%d", &opcao);
 
-
+    //switch para caso o usuário escolha iniciar o quiz ou sair
     switch (opcao){
     case 1:
         //comando do\while para caso o usuário deseje trocar o tema
@@ -26,6 +26,7 @@ int main(int argc, char* argv[]){
         //switch para as categorias
         switch (opcao2){
         case 1:
+            //do while para o usuário ter a opção de confirmar sua resposta
             do {
                 printf("Pergunta 01\n");
                 printf("Qual o menor e o maior pais do mundo?\n");
@@ -39,16 +40,19 @@ int main(int argc, char* argv[]){
                 getchar();
 
                 printf("Comfirmar Resposta?\n");
-                printf("1 - SIM\n");
-                printf("2 - NAO\n");
+                printf("1 - Sim\n");
+                printf("2 - Nao\n");
                 scanf(" %d", &opcao3);
                 getchar();
 
             } while(opcao3 == 2);
 
+            //if para verificar se a resposta está correta
             if(resposta == 'a'){
                 printf("Voce acertou a resposta\n");
                 acertos++;
+                pontuacao++;
+                pontuacao++;
                 pontuacao++;
             }else{
                 printf("Voce errou a resposta\n");
@@ -61,7 +65,8 @@ int main(int argc, char* argv[]){
             printf("3 - Ver pontuacao\n");
             printf("4 - Sair\n");
             scanf("%d", &opcao3);
-
+            
+            //if para caso o usuário deseje ir para a proxima pergunta
             if(opcao3 == 1){
                 do {
                     printf("Pergunta 02\n");
@@ -76,8 +81,8 @@ int main(int argc, char* argv[]){
                     getchar();
 
                     printf("Comfirmar Resposta?\n");
-                    printf("1 - SIM\n");
-                    printf("2 - NAO\n");
+                    printf("1 - Sim\n");
+                    printf("2 - Nao\n");
                     scanf(" %d", &opcao3);
                     getchar();
 
@@ -86,6 +91,8 @@ int main(int argc, char* argv[]){
                 if(resposta == 'c'){
                 printf("Voce acertou a resposta\n");
                 acertos++;
+                pontuacao++;
+                pontuacao++;
                 pontuacao++;
                 }else{
                 printf("Voce errou a resposta\n");
@@ -113,8 +120,8 @@ int main(int argc, char* argv[]){
                         getchar();
         
                         printf("Comfirmar Resposta?\n");
-                        printf("1 - SIM\n");
-                        printf("2 - NAO\n");
+                        printf("1 - Sim\n");
+                        printf("2 - Nao\n");
                         scanf(" %d", &opcao3);
                         getchar();
         
@@ -123,6 +130,8 @@ int main(int argc, char* argv[]){
                     if(resposta == 'd'){
                         printf("Voce acertou a resposta\n");
                         acertos++;
+                        pontuacao++;
+                        pontuacao++;
                         pontuacao++;
                     }else{
                         printf("Voce errou a resposta\n");
@@ -160,8 +169,8 @@ int main(int argc, char* argv[]){
                 getchar();
 
                 printf("Comfirmar Resposta?\n");
-                printf("1 - SIM\n");
-                printf("2 - NAO\n");
+                printf("1 - Sim\n");
+                printf("2 - Nao\n");
                 scanf(" %d", &opcao3);
                 getchar();
 
@@ -170,6 +179,8 @@ int main(int argc, char* argv[]){
             if(resposta == 'b'){
                 printf("Voce acertou a resposta\n");
                 acertos++;
+                pontuacao++;
+                pontuacao++;
                 pontuacao++;
             }else{
                 printf("Voce errou a resposta\n");
@@ -197,8 +208,8 @@ int main(int argc, char* argv[]){
                     getchar();
     
                     printf("Comfirmar Resposta?\n");
-                    printf("1 - SIM\n");
-                    printf("2 - NAO\n");
+                    printf("1 - Sim\n");
+                    printf("2 - Nao\n");
                     scanf(" %d", &opcao3);
                     getchar();
     
@@ -207,6 +218,8 @@ int main(int argc, char* argv[]){
                 if(resposta == 'c'){
                 printf("Voce acertou a resposta\n");
                 acertos++;
+                pontuacao++;
+                pontuacao++;
                 pontuacao++;
                 }else{
                 printf("Voce errou a resposta\n");
@@ -235,8 +248,8 @@ int main(int argc, char* argv[]){
                         getchar();
         
                         printf("Comfirmar Resposta?\n");
-                        printf("1 - SIM\n");
-                        printf("2 - NAO\n");
+                        printf("1 - Sim\n");
+                        printf("2 - Nao\n");
                         scanf(" %d", &opcao3);
                         getchar();
         
@@ -245,6 +258,8 @@ int main(int argc, char* argv[]){
                     if(resposta == 'b'){
                         printf("Voce acertou a resposta\n");
                         acertos++;
+                        pontuacao++;
+                        pontuacao++;
                         pontuacao++;
                     }else{
                         printf("Voce errou a resposta\n");
