@@ -19,21 +19,32 @@ int main(int argc, char* argv[]){
         do{
         printf("Escolha uma categoria para as perguntas:\n");
         printf("1 - Conhecimentos Gerais\n");
-        printf("2 - Entreterimento\n");
+        printf("2 - Entretenimento\n");
         scanf("%d", &opcao2);
 
 
         //switch para as categorias
         switch (opcao2){
         case 1:
-            printf("Pergunta 01\n");
-            printf("Quais o menor e o maior pais do mundo?\n");
-            printf("a) Vaticano e Russia\n");
-            printf("b) Nauru e China\n");
-            printf("c) Mônaco e Canadá\n");
-            printf("d) Malta e Estados Unidos\n");
-            scanf(" %c", &resposta);
-            getchar();
+            do {
+                printf("Pergunta 01\n");
+                printf("Qual o menor e o maior pais do mundo?\n");
+                printf("a) Vaticano e Russia\n");
+                printf("b) Nauru e China\n");
+                printf("c) Monaco e Canada\n");
+                printf("d) Malta e Estados Unidos\n");
+
+                printf("Digite sua resposta (a, b, c ou d):\n");
+                scanf(" %c", &resposta);
+                getchar();
+
+                printf("Comfirmar Resposta?\n");
+                printf("1 - SIM\n");
+                printf("2 - NAO\n");
+                scanf(" %d", &opcao3);
+                getchar();
+
+            } while(opcao3 == 2);
 
             if(resposta == 'a'){
                 printf("Voce acertou a resposta\n");
@@ -52,15 +63,25 @@ int main(int argc, char* argv[]){
             scanf("%d", &opcao3);
 
             if(opcao3 == 1){
+                do {
+                    printf("Pergunta 02\n");
+                    printf("Quantas casas decimais tem o numero pi?\n");
+                    printf("a) Duas\n");
+                    printf("b) Centenas\n");
+                    printf("c) Infinitas\n");
+                    printf("d) Milhares\n");
 
-                printf("Pergunta 02\n");
-                printf("Quantas casas decimais tem o numero pi?\n");
-                printf("a) Duas\n");
-                printf("b) Centenas\n");
-                printf("c) Infinitas\n");
-                printf("d) Milhares\n");
-                scanf(" %c", &resposta);
-                getchar();
+                    printf("Digite sua resposta (a, b, c ou d):\n");
+                    scanf(" %c", &resposta);
+                    getchar();
+
+                    printf("Comfirmar Resposta?\n");
+                    printf("1 - SIM\n");
+                    printf("2 - NAO\n");
+                    scanf(" %d", &opcao3);
+                    getchar();
+
+                } while(opcao3 == 2);
 
                 if(resposta == 'c'){
                 printf("Voce acertou a resposta\n");
@@ -79,14 +100,25 @@ int main(int argc, char* argv[]){
                 scanf("%d", &opcao3);
 
                 if(opcao3 == 1){
-                    printf("Pergunta 03\n");
-                    printf("Quanto tempo a luz do Sol demora para chegar a Terra?\n");
-                    printf("a) 12 minutos\n");
-                    printf("b) 1 dia\n");
-                    printf("c) 12 horas\n");
-                    printf("d) 8 minutos\n");
-                    scanf(" %c", &resposta);
-                    getchar();
+                    do {
+                        printf("Pergunta 03\n");
+                        printf("Quanto tempo a luz do Sol demora para chegar a Terra?\n");
+                        printf("a) 12 minutos\n");
+                        printf("b) 1 dia\n");
+                        printf("c) 12 horas\n");
+                        printf("d) 8 minutos\n");
+
+                        printf("Digite sua resposta (a, b, c ou d):\n");
+                        scanf(" %c", &resposta);
+                        getchar();
+        
+                        printf("Comfirmar Resposta?\n");
+                        printf("1 - SIM\n");
+                        printf("2 - NAO\n");
+                        scanf(" %d", &opcao3);
+                        getchar();
+        
+                    } while(opcao3 == 2);
 
                     if(resposta == 'd'){
                         printf("Voce acertou a resposta\n");
@@ -115,14 +147,25 @@ int main(int argc, char* argv[]){
 
 
         case 2:
-            printf("Pergunta 01\n");
-            printf("Qual o verdadeiro nome do Capitao America? \n");
-            printf("a) Tony Stark\n");
-            printf("b) Steve Rogers\n");
-            printf("c) Bucky Barner\n");
-            printf("d) Bruce Banner\n");
-            scanf(" %c", &resposta);
-            getchar();
+            do{
+                printf("Pergunta 01\n");
+                printf("Qual o verdadeiro nome do Capitao America? \n");
+                printf("a) Tony Stark\n");
+                printf("b) Steve Rogers\n");
+                printf("c) Bucky Barner\n");
+                printf("d) Bruce Banner\n");
+
+                printf("Digite sua resposta (a, b, c ou d):\n");
+                scanf(" %c", &resposta);
+                getchar();
+
+                printf("Comfirmar Resposta?\n");
+                printf("1 - SIM\n");
+                printf("2 - NAO\n");
+                scanf(" %d", &opcao3);
+                getchar();
+
+            } while(opcao3 == 2);
 
             if(resposta == 'b'){
                 printf("Voce acertou a resposta\n");
@@ -141,15 +184,25 @@ int main(int argc, char* argv[]){
             scanf("%d", &opcao3);
 
             if(opcao3 == 1){
+                do{
+                    printf("Pergunta 02\n");
+                    printf("Qual desses personagens de filmes de terror tem a capacidade de invadir o sonho das pessoas?\n");
+                    printf("a) it\n");
+                    printf("b) jason\n");
+                    printf("c) Freddy Krueger\n");
+                    printf("d) Hannibal Lecter\n");
 
-                printf("Pergunta 02\n");
-                printf("Qual desses personagens de filmes de terror tem a capacidade de invadir o sonho das pessoas?\n");
-                printf("a) it\n");
-                printf("b) jason\n");
-                printf("c) Freddy Krueger\n");
-                printf("d) Hannibal Lecter\n");
-                scanf(" %c", &resposta);
-                getchar();
+                    printf("Digite sua resposta (a, b, c ou d):\n");
+                    scanf(" %c", &resposta);
+                    getchar();
+    
+                    printf("Comfirmar Resposta?\n");
+                    printf("1 - SIM\n");
+                    printf("2 - NAO\n");
+                    scanf(" %d", &opcao3);
+                    getchar();
+    
+                } while(opcao3 == 2);
 
                 if(resposta == 'c'){
                 printf("Voce acertou a resposta\n");
@@ -169,14 +222,25 @@ int main(int argc, char* argv[]){
             }
 
                 if(opcao3 == 1){
-                    printf("Pergunta 03\n");
-                    printf("Qual a musica mais famosa do Michael Jackson\n");
-                    printf("a) Beat it\n");
-                    printf("b) Billie Jean\n");
-                    printf("c) Thriller\n");
-                    printf("d) Bad\n");
-                    scanf(" %c", &resposta);
-                    getchar();
+                    do{
+                        printf("Pergunta 03\n");
+                        printf("Qual a musica mais famosa do Michael Jackson\n");
+                        printf("a) Beat it\n");
+                        printf("b) Billie Jean\n");
+                        printf("c) Thriller\n");
+                        printf("d) Bad\n");
+
+                        printf("Digite sua resposta (a, b, c ou d):\n");
+                        scanf(" %c", &resposta);
+                        getchar();
+        
+                        printf("Comfirmar Resposta?\n");
+                        printf("1 - SIM\n");
+                        printf("2 - NAO\n");
+                        scanf(" %d", &opcao3);
+                        getchar();
+        
+                    } while(opcao3 == 2);
 
                     if(resposta == 'b'){
                         printf("Voce acertou a resposta\n");
