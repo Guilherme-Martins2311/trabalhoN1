@@ -139,7 +139,7 @@ int main(int argc, char* argv[]){
                         pontuacao--;
                     }
 
-                    printf("\n1 - Proxima pergunta\n");
+                    printf("\nVoce concluiu as perguntas de conhecimentos gerais!\n");
                     printf("2 - Escolher outro tema\n");
                     printf("3 - Ver pontuacao\n");
                     printf("4 - Sair\n");
@@ -267,7 +267,7 @@ int main(int argc, char* argv[]){
                         pontuacao--;
                     }
 
-                    printf("\n1 - Proxima pergunta\n");
+                    printf("\nVoce concluiu as perguntas de entretenimento!\n");
                     printf("2 - Escolher outro tema\n");
                     printf("3 - Ver pontuacao\n");
                     printf("4 - Sair\n");
